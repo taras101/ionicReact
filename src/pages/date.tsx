@@ -14,7 +14,7 @@ const Day = () => {
   const tick = () => setDay(new Date().toLocaleDateString());
 
   return (
-    <IonCard color="secondary" class="ion-text-center ion-padding date">
+    <IonCard class="ion-text-center ion-padding date">
       <h1>{day}</h1>
     </IonCard>
   );

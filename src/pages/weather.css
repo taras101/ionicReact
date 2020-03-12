@@ -1,0 +1,16 @@
+.weather h1 {
+  font-size: 3em;
+  color: black;
+  font-weight: bold;
+}
+.weather p {
+  font-size: 2em;
+  color: black;
+}
+.weather p span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.weather {
+  background-color: slateblue;
+}

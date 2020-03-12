@@ -13,6 +13,9 @@ import {
 import React from "react";
 import Clock from "./clock";
 import Day from "./date";
+import CountDown from "./countDown";
+import CdForm from "./cdForm";
+import Weather from "./weather";
 
 const NewItem: React.FC = () => {
   return (
@@ -25,7 +28,7 @@ const NewItem: React.FC = () => {
           <IonTitle>New Item</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonContent color="dark">
         <IonGrid>
           <IonRow>
             <IonCol>
@@ -33,6 +36,21 @@ const NewItem: React.FC = () => {
             </IonCol>
             <IonCol>
               <Day />
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <CountDown />
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <Weather />
+            </IonCol>
+          </IonRow>
+          <IonRow>
+            <IonCol>
+              <CdForm />
             </IonCol>
           </IonRow>
         </IonGrid>

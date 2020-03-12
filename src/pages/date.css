@@ -1,3 +1,7 @@
 .date h1 {
   font-size: 6em;
+  color: black;
+}
+.date {
+  background-color: greenyellow;
 }
