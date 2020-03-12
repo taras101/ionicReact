@@ -13,10 +13,15 @@ export const Weather = () => {
     console.log(json1);
   }, []);
   React.useEffect(() => {
-    fetchWeather().then(data => {
-      setCurrent(data.main);
-      console.log(data);
-    });
+    const getData = () => {
+      fetchWeather().then(data => {
+        setCurrent(data.main);
+        console.log(data);
+      });
+    };
+    getData();
+    let interval = setInterval(getData, 1800000);
+    return () => clearInterval(interval);
   }, []);
   const convertTemp = (k: string) => {
     return Math.round(Number(k) - 273);
